@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -5,4 +6,61 @@
 }
 * body {
   background-color: hsl(217, 54%, 11%);
+  color: white;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+}
+* body .highlight {
+  color: hsl(215, 51%, 70%);
+  border: 1px solid yellow;
+}
+* body .section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(216, 50%, 16%);
+  width: 370px;
+  padding: 24px;
+  border-radius: 18px;
+}
+* body .section .image {
+  width: 100%;
+  border-radius: 12px;
+}
+* body .section #content {
+  margin: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+* body .section #content h2 {
+  font-size: 24px;
+}
+* body .section #content p {
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+* body .section #content #flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+* body .section #content #flex-container .flex-content {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+* body .section #content #flex-container .flex-content img {
+  height: 100%;
+}
+* body .section #bottom {
+  border-top: 1px solid hsl(215, 32%, 27%);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0px 8px;
+}
+* body .section #bottom .avatar {
+  width: 12%;
 }/*# sourceMappingURL=style.css.map */

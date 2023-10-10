@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
 $soft_blue: hsl(215, 51%, 70%);
 $cyan: hsl(178, 100%, 50%);
 $dark_blue_01: hsl(217, 54%, 11%);
@@ -13,6 +15,74 @@ $paragraph_size: 18px;
     box-sizing: border-box;
 
     body {
-        background-color: $dark_blue;
+        background-color: $dark_blue_01;
+        color: white;
+        font-size: 18px;
+        font-family: 'Outfit', sans-serif;
+
+        .highlight {
+            color: $soft_blue;
+            border: 1px solid yellow;
+        }
+
+        .section {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $dark_blue_02;
+            width: 370px;
+            padding: 24px;
+            border-radius: 18px;
+
+            .image {
+                width: 100%;
+                border-radius: 12px;
+            }
+
+            #content {
+                margin: 15px 0px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                h2 {
+                    font-size: 24px;
+                }
+
+                p {
+                    font-weight: 300;
+                    color: $soft_blue;
+                }
+
+                #flex-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .flex-content {
+                        display: flex;
+                        gap: 5px;
+                        align-items: center;
+
+                        img {
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+
+            #bottom {
+                border-top: 1px solid $dark_blue_03;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                padding: 15px 0px 8px;
+
+                .avatar {
+                    width: 12%;
+                }
+            }
+        }
     }
 }
