@@ -12,7 +12,6 @@
 }
 * body .highlight {
   color: hsl(215, 51%, 70%);
-  border: 1px solid yellow;
 }
 * body .section {
   position: absolute;
@@ -20,7 +19,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: hsl(216, 50%, 16%);
-  width: 370px;
+  width: 340px;
   padding: 24px;
   border-radius: 18px;
 }
@@ -58,9 +57,28 @@
   border-top: 1px solid hsl(215, 32%, 27%);
   display: flex;
   align-items: center;
-  gap: 15px;
   padding: 15px 0px 8px;
 }
 * body .section #bottom .avatar {
   width: 12%;
+  margin-right: 15px;
+  border: 1px solid hsl(178, 100%, 50%);
+  border-radius: 100%;
+}
+* body .attribution {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  text-align: center;
+  font-size: 15px;
+}
+* body .attribution a {
+  color: hsl(215, 51%, 70%);
+  text-decoration: none;
+  transition: 0.8s;
+}
+* body .attribution a:hover {
+  color: hsl(178, 100%, 50%);
 }/*# sourceMappingURL=style.css.map */

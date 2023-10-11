@@ -22,7 +22,6 @@ $paragraph_size: 18px;
 
         .highlight {
             color: $soft_blue;
-            border: 1px solid yellow;
         }
 
         .section {
@@ -31,7 +30,7 @@ $paragraph_size: 18px;
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: $dark_blue_02;
-            width: 370px;
+            width: 340px;
             padding: 24px;
             border-radius: 18px;
 
@@ -76,12 +75,34 @@ $paragraph_size: 18px;
                 border-top: 1px solid $dark_blue_03;
                 display: flex;
                 align-items: center;
-                gap: 15px;
                 padding: 15px 0px 8px;
 
                 .avatar {
                     width: 12%;
+                    margin-right: 15px;
+                    border: 1px solid $cyan;
+                    border-radius: 100%;
                 }
+            }
+        }
+
+        .attribution {
+            position: absolute;
+            bottom: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            text-align: center;
+            font-size: 15px;
+
+            a {
+                color: $soft_blue;
+                text-decoration: none;
+                transition: 0.8s;
+            }
+
+            a:hover {
+                color: $cyan;
             }
         }
     }
